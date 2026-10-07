@@ -6,4 +6,11 @@ const CATEGORIES = [{"name": "その他", "slug": "other", "description": "そ�
 const MATERIALS = [
   // 例:
   // { name: "イヌ", category: "動物", image: "images/animals/イヌ.png", tags: ["犬","動物","哺乳類"] },
+  {
+  id: "inu",
+  name: "イヌ（飼い犬）",
+  category: "動物",
+  image: "images/animals/イヌ（飼い犬）.png",
+  tags: ["犬", "動物"]
+},
 ];
