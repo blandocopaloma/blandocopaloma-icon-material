@@ -3,6 +3,15 @@
 const CATEGORIES = [{"name": "その他", "slug": "other", "description": "その他の素材"}, {"name": "モンスター", "slug": "monster", "description": "モンスター・魔物"}, {"name": "技能", "slug": "skill", "description": "技能・能力"}, {"name": "空・天候", "slug": "sky", "description": "空・天候"}, {"name": "建物・場所", "slug": "buildings", "description": "建物・場所"}, {"name": "施設・サービス", "slug": "facilities", "description": "施設・サービス"}, {"name": "乗り物", "slug": "vehicles", "description": "乗り物"}, {"name": "植物", "slug": "plants", "description": "植物"}, {"name": "食べ物", "slug": "food", "description": "食べ物"}, {"name": "人間", "slug": "human", "description": "人間"}, {"name": "装備", "slug": "equipment", "description": "装備"}, {"name": "動物", "slug": "animals", "description": "動物"}, {"name": "武器", "slug": "weapons", "description": "武器"}, {"name": "物", "slug": "objects", "description": "物"}];
 
 const MATERIALS = [
+  { id: "other-ウイルス", name: "ウイルス", category: "その他", image: "images/other/ウイルス.png", tags: [] },
+  { id: "other-ハート（ブレイク）", name: "ハート（ブレイク）", category: "その他", image: "images/other/ハート（ブレイク）.png", tags: [] },
+  { id: "other-ベル", name: "ベル", category: "その他", image: "images/other/ベル.png", tags: [] },
+  { id: "other-炎", name: "炎", category: "その他", image: "images/other/炎.png", tags: [] },
+  { id: "other-発言", name: "発言", category: "その他", image: "images/other/発言.png", tags: [] },
+  { id: "other-発言（会話）", name: "発言（会話）", category: "その他", image: "images/other/発言（会話）.png", tags: [] },
+  { id: "other-血痕", name: "血痕", category: "その他", image: "images/other/血痕.png", tags: [] },
+  { id: "other-静電気", name: "静電気", category: "その他", image: "images/other/静電気.png", tags: [] },
+  { id: "other-魔法", name: "魔法", category: "その他", image: "images/other/魔法.png", tags: [] },
   { id: "animals-アライグマ", name: "アライグマ", category: "動物", image: "images/animals/アライグマ.png", tags: [] },
   { id: "animals-アルマジロ", name: "アルマジロ", category: "動物", image: "images/animals/アルマジロ.png", tags: [] },
   { id: "animals-イヌ（飼い犬）", name: "イヌ（飼い犬）", category: "動物", image: "images/animals/イヌ（飼い犬）.png", tags: [] },
