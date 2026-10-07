@@ -1,0 +1,31 @@
+name: Update material list
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate materials.js
+        run: python3 scripts/generate_materials.py
+
+      - name: Commit updated material list
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add materials.js
+          if git diff --cached --quiet; then
+            echo "No changes to materials.js"
+          else
+            git commit -m "Auto-update material list"
+            git push
+          fi

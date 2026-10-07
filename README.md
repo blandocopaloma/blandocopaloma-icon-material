@@ -21,3 +21,29 @@ Cloudflare Pages にそのまま公開できる静的サイトの雛形です。
 ## 注意
 
 `terms.html` の利用規約は仮文です。公開前に実際の利用条件へ書き換えてください。
+
+## 素材の追加方法（自動登録）
+
+画像は `images/` のカテゴリー別フォルダに入れてください。
+ファイル名が素材名、フォルダがカテゴリーになります。
+
+| フォルダ | カテゴリー |
+|---|---|
+| `other` | その他 |
+| `monster` | モンスター |
+| `skill` | 技能 |
+| `sky` | 空・天候 |
+| `buildings` | 建物・場所 |
+| `facilities` | 施設・サービス |
+| `vehicles` | 乗り物 |
+| `plants` | 植物 |
+| `food` | 食べ物 |
+| `human` | 人間 |
+| `equipment` | 装備 |
+| `animals` | 動物 |
+| `weapons` | 武器 |
+| `objects` | 物 |
+
+たとえば `images/animals/イヌ（飼い犬）.png` を追加して GitHub に commit/push すると、GitHub Actions が `materials.js` を自動生成します。Cloudflare 側も GitHub の更新を検知して再デプロイします。
+
+対応画像形式：PNG / JPG / JPEG / WebP / GIF / SVG
