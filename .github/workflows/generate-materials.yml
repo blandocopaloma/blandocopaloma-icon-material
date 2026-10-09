@@ -22,13 +22,20 @@ jobs:
       - name: Generate materials.js
         run: python3 scripts/generate_materials.py
 
-      - name: Commit generated materials.js
+      - name: Prepare public site
+        run: |
+          mkdir -p public
+          cp index.html style.css app.js materials.js terms.html about.html public/
+          rm -rf public/images
+          cp -R images public/images
+
+      - name: Commit generated files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add materials.js
+          git add materials.js public
           if git diff --cached --quiet; then
-            echo "No changes to materials.js"
+            echo "No generated changes"
           else
             git commit -m "Auto-generate materials.js"
             git push
