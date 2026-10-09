@@ -7,20 +7,20 @@ IMAGES = ROOT / "images"
 OUT = ROOT / "materials.js"
 
 CATEGORIES = [
-    ("other", "その他", "その他の素材"),
+    ("animals", "動物", "動物"),
     ("monster", "モンスター", "モンスター・魔物"),
-    ("skill", "技能", "技能・能力"),
-    ("sky", "空・天候", "空・天候"),
+    ("plants", "植物", "植物"),
+    ("human", "人間", "人間"),
+    ("food", "食べ物", "食べ物"),
+    ("vehicles", "乗り物", "乗り物"),
+    ("weapons", "武器", "武器"),
+    ("equipment", "装備", "装備"),
+    ("objects", "物", "物"),
     ("buildings", "建物・場所", "建物・場所"),
     ("facilities", "施設・サービス", "施設・サービス"),
-    ("vehicles", "乗り物", "乗り物"),
-    ("plants", "植物", "植物"),
-    ("food", "食べ物", "食べ物"),
-    ("human", "人間", "人間"),
-    ("equipment", "装備", "装備"),
-    ("animals", "動物", "動物"),
-    ("weapons", "武器", "武器"),
-    ("objects", "物", "物"),
+    ("skill", "技能", "技能・能力"),
+    ("sky", "空・天候", "空・天候"),
+    ("other", "その他", "その他の素材"),
 ]
 
 EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp", ".gif", ".svg"}
